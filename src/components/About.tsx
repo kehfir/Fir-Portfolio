@@ -42,6 +42,13 @@ const About = () => {
       location: "Ecole Supérieure de Technologie (Maroc)",
       year: "2021–2023",
       icon: Award
+    },
+        {
+      degree: "BAC",
+      institution: "Baccalauréat Scientifique - Option Physique",
+      location: "Groupe Scolaire Gauss (Maroc)",
+      year: "2020–2021",
+      icon: Award
     }
   ];
 
