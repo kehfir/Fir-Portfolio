@@ -38,6 +38,37 @@ const Hero = () => {
             <span className="text-sm font-medium text-gray-700">Disponible pour de nouvelles opportunités</span>
           </div>
           
+          {/* Photo de profil */}
+          <div className="mb-8 animate-scale-in">
+            <div className="relative inline-block">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto relative group">
+                {/* Photo avec URL corrigée et fallbacks multiples */}
+                <img 
+
+                  src="https://lh3.googleusercontent.com/d/1j2hqGyO1xin1nKwsEqGrbtMsmZzt1iqG"
+                  alt="Firdaous Kehailou"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  onError={(e) => {
+                    console.log('Tentative avec URL alternative...');
+                    const target = e.currentTarget;
+                    if (target.src.includes('googleusercontent')) {
+                      target.src = 'https://drive.google.com/uc?export=view&id=1j2hqGyO1xin1nKwsEqGrbtMsmZzt1iqG';
+                    } else if (target.src.includes('drive.google.com')) {
+                      target.src = 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face';
+                    }
+                  }}
+                />
+                {/* Overlay effet au survol */}
+                <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              </div>
+              {/* Ring animé autour de la photo */}
+              <div className="absolute inset-0 w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-blue-400 animate-spin-slow opacity-50"></div>
+              {/* Points décoratifs */}
+              <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-400 rounded-full border-2 border-white animate-pulse"></div>
+            </div>
+          </div>
+
+
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-slide-in-left">
             <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 bg-clip-text text-transparent leading-tight">
               Firdaous kehailou
