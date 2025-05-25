@@ -20,47 +20,47 @@ const Interests = () => {
     },
     {
       title: "UE 5.2 – Mettre en œuvre l’analyse exploratoire de données complexes",
-      description: "Stratégies d'investissement en cryptomonnaies et technologie blockchain",
+      description: "Application de techniques de datamining pour l’analyse de données complexes.",
       icon: ChartBarIncreasing,
       gradient: "from-blue-600 to-blue-700",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
       details: [
-        "Datamining : exploration, classification, clustering ",
-        "Développement du plan de carrière",
+        "Datamining : exploration, classification, clustering",
+        "Développement du plan de carrière"
       ]
     },
     {
       title: "UE 5.3 – Intégrer et valoriser sa production dans l’écosystème de l’entreprise",
-      description: "Visualisation, communication responsable, éthique, anglais pro",
+      description: "Mise en valeur des résultats à travers la visualisation, la communication éthique et professionnelle, y compris en anglais.",
       icon: BarChart3,
       gradient: "from-blue-500 to-blue-700",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
       details: [
         "Visualisation",
-        "communication responsable",
-        "éthique, anglais pro",
-
+        "Communication responsable",
+        "Éthique",
+        "Anglais professionnel",
+        "Migration vers NoSQL"
       ]
     },
     {
       title: "UE 5.4 – Participer au déploiement d’une solution décisionnelle",
-      description: "Développement logiciel, visualisation web, déploiement outil décisionnel",
+      description: "Développement logiciel orienté décisionnel, visualisation web et mise en production d’outils décisionnels.",
       icon: Container,
       gradient: "from-blue-500 to-blue-700",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
       details: [
         "Développement logiciel",
-        "visualisation web",
-        "déploiement outil décisionnel",
-
+        "Visualisation web",
+        "Déploiement d’un outil décisionnel"
       ]
     },
     {
       title: "UE 6.1 – Intégrer le traitement de données complexes",
-      description: "Développement et test d’un outil décisionnel, sécurité (pentest), stage et portfolio",
+      description: "Développement avancé d’outils décisionnels, tests de sécurité (pentest), introduction à la blockchain et gestion de projet.",
       icon: ChartArea,
       gradient: "from-blue-500 to-blue-700",
       bgColor: "bg-blue-50",
@@ -69,55 +69,49 @@ const Interests = () => {
         "Développement et test d’un outil décisionnel",
         "Sécurité (pentest)",
         "Stage et portfolio",
-
+        "Blockchain, MCO"
       ]
     },
-    
     {
       title: "UE 6.2 – Mettre en œuvre l’analyse exploratoire de données complexes",
-      description: "Analyse statistique, apprentissage statistique pour l’IA, application en stage",
+      description: "Approfondissement en analyse statistique et apprentissage automatique pour l’intelligence artificielle.",
       icon: ChartArea,
       gradient: "from-blue-500 to-blue-700",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
       details: [
-        "Développement et test d’un outil décisionnel",
-        "Sécurité (pentest)",
-        "Stage et portfolio",
-
+        "Analyse statistique",
+        "Apprentissage statistique",
+        "IA"
       ]
     },
     {
       title: "UE 6.3 – Intégrer et valoriser sa production dans l’écosystème de l’entreprise",
-      description: "TPrésentation de stage (180s), anglais pro, étude de cas tourisme, communication managériale",
+      description: "Communication professionnelle et managériale, présentation de stage, étude de cas sectorielle et anglais appliqué.",
       icon: Building2,
       gradient: "from-blue-500 to-blue-700",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
       details: [
-        "Présentation de stage (180s),",
-        "anglais pro",
-        "étude de cas tourisme",
-        "communication managériale"
-
+        "Présentation de stage (180s)",
+        "Anglais professionnel",
+        "Étude de cas tourisme",
+        "Communication managériale"
       ]
     },
     {
       title: "UE 6.4 – Participer au déploiement d’une solution décisionnelle",
-      description: "Développement avancé d’outil décisionnel, Big Data",
+      description: "Mise en production avancée d’outils décisionnels, intégration des technologies Big Data et applications blockchain.",
       icon: Building2,
       gradient: "from-blue-500 to-blue-700",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
       details: [
-        "Présentation de stage (180s),",
-        "anglais pro",
-        "étude de cas tourisme",
-        "communication managériale"
-
+        "Développement avancé d’un outil décisionnel",
+        "Big Data",
+        "Blockchain, MCO et Bitcoin"
       ]
-    },
-
+    }
 
   ];
 

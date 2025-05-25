@@ -26,7 +26,7 @@ const Skills = () => {
       color: "from-blue-500 to-blue-600",
       bgColor: "bg-blue-50 hover:bg-blue-100",
       borderColor: "border-blue-200 hover:border-blue-300",
-      skills: ["MongoDB", "Mongoose", "NoSQL","Hbase","Neo4J"]
+      skills: ["MongoDB", "Mongoose", "NoSQL","Hbase","Neo4J","PostgreSQL"]
     },
     {
       title: "Cloud & IA",

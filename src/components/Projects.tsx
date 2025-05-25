@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, ExternalLink, ShoppingCart, MessageCircle, Edit3, Calculator, Building2, Play, Eye, FolderOpen } from 'lucide-react';
+import { Github, ExternalLink, ShoppingCart, MessageCircle, Edit3, Calculator, Building2, Play, Eye, FolderOpen,Bot,Activity } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -94,8 +94,54 @@ const Projects = () => {
         features: "7+",
         tech: "6"
       }
+    },
+    {
+      title: "Chatbot de santé",
+      description: "Chatbot conversationnel développé pour accompagner les utilisateurs dans la compréhension de leurs symptômes et fournir des informations médicales de base. Ce projet vise à améliorer l'accessibilité aux premières informations de santé.",
+      techStack: ["Python", "Flask", "HTML", "CSS", "JavaScript", "SQLite", "NLP"],
+      github: "",
+      videoLink: "",
+      icon: Bot, // ✅ Icône Lucide corrigée
+      gradient: "from-red-500 to-red-600",
+      bgColor: "bg-red-50",
+      borderColor: "border-red-200",
+      features: [
+        "Interaction en langage naturel avec l'utilisateur",
+        "Analyse de symptômes à partir de mots-clés",
+        "Système de réponse basé sur une base de données médicale simplifiée",
+        "Interface web légère et responsive",
+        "Journalisation des conversations pour un meilleur suivi"
+      ],
+      stats: {
+        lines: "2500+",
+        features: "7+",
+        tech: "6"
+      }
+    },
+    {
+      title: "Détection du cancer du sein",
+      description: "Application d'analyse de données médicales pour prédire la présence potentielle d'un cancer du sein grâce à des modèles d'apprentissage automatique. L'objectif est de contribuer au dépistage précoce avec des outils accessibles.",
+      techStack: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "streamlit"],
+      github: "",
+      videoLink: "",
+      icon: Activity, // ✅ Icône Lucide corrigée
+      gradient: "from-pink-500 to-pink-600",
+      bgColor: "bg-pink-50",
+      borderColor: "border-pink-200",
+      features: [
+        "Prétraitement et normalisation de données médicales",
+        "Exploration visuelle des variables clés",
+        "Modélisation avec SVM, Random Forest, KNN, etc.",
+        "Évaluation avec matrices de confusion et courbes ROC",
+        "Interprétation des résultats pour la décision clinique"
+      ],
+      stats: {
+        lines: "2000+",
+        features: "5+",
+        tech: "6"
+      }
     }
-  ];
+];
 
   return (
     <section id="projects" className="py-20 bg-gradient-to-br from-white to-blue-50">
