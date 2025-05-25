@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Send, MessageCircle, CheckCircle, AlertCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,9 +27,9 @@ const Contact = () => {
     setStatus({ type: 'loading', message: 'Envoi en cours...' });
 
     try {
-      const serviceID = 'service_urryhoq'; // Remplacez par votre Service ID
-      const templateID = 'template_0kofqi3'; // Remplacez par votre Template ID
-      const publicKey = '5BDi7-zT3A1zr8fi1'; // Remplacez par votre Public Key
+      const serviceID = 'service_1enpbb3'; // Votre Service ID EmailJS
+      const templateID = 'template_9y6cvdd'; // Votre Template ID EmailJS
+      const publicKey = '5BDi7-zT3A1zr8fi1'; // Votre Public Key EmailJS
 
       // Paramètres du template
       const templateParams = {
@@ -40,11 +41,9 @@ const Contact = () => {
         reply_to: formData.email
       };
 
-      // Simulation de l'envoi EmailJS (remplacez par le vrai code)
-      // const response = await emailjs.send(serviceID, templateID, templateParams, publicKey);
-
-      // Simulation pour la démo
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Envoi de l'email via EmailJS
+      const response = await emailjs.send(serviceID, templateID, templateParams, publicKey);
+      console.log('Email envoyé!', response);
 
       setStatus({
         type: 'success',
@@ -60,7 +59,7 @@ const Contact = () => {
       }, 5000);
 
     } catch (error) {
-      console.error('Erreur lors de l\'envoi:', error);
+      console.error('Erreur lors de l\'envoi: ', error);
       setStatus({
         type: 'error',
         message: 'Une erreur s\'est produite lors de l\'envoi. Veuillez réessayer.'
@@ -129,10 +128,10 @@ const Contact = () => {
       {/* Message de statut */}
       {status.message && (
         <div className={`max-w-2xl mx-auto mb-8 p-4 rounded-lg border ${status.type === 'success'
-            ? 'bg-green-50 text-green-800 border-green-200'
-            : status.type === 'error'
-              ? 'bg-red-50 text-red-800 border-red-200'
-              : 'bg-blue-50 text-blue-800 border-blue-200'
+          ? 'bg-green-50 text-green-800 border-green-200'
+          : status.type === 'error'
+            ? 'bg-red-50 text-red-800 border-red-200'
+            : 'bg-blue-50 text-blue-800 border-blue-200'
           }`}>
           <div className="flex items-center">
             {status.type === 'success' && <CheckCircle size={20} className="mr-2" />}
@@ -206,7 +205,7 @@ const Contact = () => {
             <h3 className="text-2xl font-semibold text-gray-800">Envoyer un Message</h3>
           </div>
 
-          <div className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -276,29 +275,25 @@ const Contact = () => {
               />
             </div>
 
-            <form onSubmit={handleSubmit}>
-              <button
-                type="submit"
-                disabled={status.type === 'loading'}
-                className="w-full bg-gradient-to-r from-emerald-600 to-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-emerald-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
-              >
-                {status.type === 'loading' ? (
-                  <>
-                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                    Envoi en cours...
-                  </>
-                ) : (
-                  <>
-                    <Send size={20} className="mr-2" />
-                    Envoyer le Message
-                  </>
-                )}
-              </button>
-            </form>
-          </div>
+            <button
+              type="submit"
+              disabled={status.type === 'loading'}
+              className="w-full bg-gradient-to-r from-emerald-600 to-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-emerald-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+            >
+              {status.type === 'loading' ? (
+                <>
+                  <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                  Envoi en cours...
+                </>
+              ) : (
+                <>
+                  <Send size={20} className="mr-2" />
+                  Envoyer le Message
+                </>
+              )}
+            </button>
+          </form>
         </div>
-
-
       </div>
     </section>
   );

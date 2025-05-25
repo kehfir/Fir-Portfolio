@@ -32,7 +32,7 @@ const Interests = () => {
     },
     {
       title: "UE 5.3 – Intégrer et valoriser sa production dans l’écosystème de l’entreprise",
-      description: "Trading de biens physiques et contrats à terme sur matières premières",
+      description: "Visualisation, communication responsable, éthique, anglais pro",
       icon: BarChart3,
       gradient: "from-blue-500 to-blue-700",
       bgColor: "bg-blue-50",
@@ -46,7 +46,7 @@ const Interests = () => {
     },
     {
       title: "UE 5.4 – Participer au déploiement d’une solution décisionnelle",
-      description: "Trading de biens physiques et contrats à terme sur matières premières",
+      description: "Développement logiciel, visualisation web, déploiement outil décisionnel",
       icon: Container,
       gradient: "from-blue-500 to-blue-700",
       bgColor: "bg-blue-50",
@@ -60,7 +60,22 @@ const Interests = () => {
     },
     {
       title: "UE 6.1 – Intégrer le traitement de données complexes",
-      description: "Trading de biens physiques et contrats à terme sur matières premières",
+      description: "Développement et test d’un outil décisionnel, sécurité (pentest), stage et portfolio",
+      icon: ChartArea,
+      gradient: "from-blue-500 to-blue-700",
+      bgColor: "bg-blue-50",
+      borderColor: "border-blue-200",
+      details: [
+        "Développement et test d’un outil décisionnel",
+        "Sécurité (pentest)",
+        "Stage et portfolio",
+
+      ]
+    },
+    
+    {
+      title: "UE 6.2 – Mettre en œuvre l’analyse exploratoire de données complexes",
+      description: "Analyse statistique, apprentissage statistique pour l’IA, application en stage",
       icon: ChartArea,
       gradient: "from-blue-500 to-blue-700",
       bgColor: "bg-blue-50",
@@ -74,7 +89,22 @@ const Interests = () => {
     },
     {
       title: "UE 6.3 – Intégrer et valoriser sa production dans l’écosystème de l’entreprise",
-      description: "Trading de biens physiques et contrats à terme sur matières premières",
+      description: "TPrésentation de stage (180s), anglais pro, étude de cas tourisme, communication managériale",
+      icon: Building2,
+      gradient: "from-blue-500 to-blue-700",
+      bgColor: "bg-blue-50",
+      borderColor: "border-blue-200",
+      details: [
+        "Présentation de stage (180s),",
+        "anglais pro",
+        "étude de cas tourisme",
+        "communication managériale"
+
+      ]
+    },
+    {
+      title: "UE 6.4 – Participer au déploiement d’une solution décisionnelle",
+      description: "Développement avancé d’outil décisionnel, Big Data",
       icon: Building2,
       gradient: "from-blue-500 to-blue-700",
       bgColor: "bg-blue-50",
