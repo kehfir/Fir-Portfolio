@@ -26,9 +26,9 @@ const Contact = () => {
     setStatus({ type: 'loading', message: 'Envoi en cours...' });
 
     try {
-      const serviceID = 'YOUR_SERVICE_ID'; // Remplacez par votre Service ID
-      const templateID = 'YOUR_TEMPLATE_ID'; // Remplacez par votre Template ID
-      const publicKey = 'YOUR_PUBLIC_KEY'; // Remplacez par votre Public Key
+      const serviceID = 'service_urryhoq'; // Remplacez par votre Service ID
+      const templateID = 'template_q56895n'; // Remplacez par votre Template ID
+      const publicKey = 'Od_qS2BuNtXFEziGl'; // Remplacez par votre Public Key
 
       // Paramètres du template
       const templateParams = {
