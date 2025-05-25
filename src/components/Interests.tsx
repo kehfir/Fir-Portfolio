@@ -135,7 +135,7 @@ const Interests = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Au-delà de la technologie, je suis passionné par les marchés financiers et les stratégies de trading.
+          Cette année universitaire a été riche en apprentissages et en projets concrets. Dans le cadre de ma formation en Sciences des Données à l’IUT Clermont Auvergne (parcours Visualisation et Conception d’Outils Décisionnels), j’ai suivi plusieurs Unités d’Enseignement (UE) couvrant un large éventail de compétences en informatique, analyse de données, visualisation, développement d’applications et gestion de projets.
           </p>
         </div>
 
