@@ -27,7 +27,7 @@ const Contact = () => {
 
     try {
       const serviceID = 'service_urryhoq'; // Remplacez par votre Service ID
-      const templateID = 'template_9wll1l8'; // Remplacez par votre Template ID
+      const templateID = 'template_0kofqi3'; // Remplacez par votre Template ID
       const publicKey = '5BDi7-zT3A1zr8fi1'; // Remplacez par votre Public Key
 
       // Paramètres du template
