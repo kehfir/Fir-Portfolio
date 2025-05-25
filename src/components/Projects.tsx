@@ -154,7 +154,7 @@ const Projects = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-up">
-            Une vitrine de mon travail récent, démontrant mon expertise en développement full-stack, technologies modernes et approches innovantes de résolution de problèmes.
+            Une vitrine de mon travail récent, démontrant mon expertise en développement full-stack , IA ,technologies modernes pour des approches innovantes de résolution de problèmes.
           </p>
         </div>
 

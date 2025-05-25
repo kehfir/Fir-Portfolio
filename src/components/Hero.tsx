@@ -69,7 +69,7 @@ const Hero = () => {
 
            Passionnée par l’exploitation des données pour générer des solutions à forte valeur ajoutée.
             Spécialisé dans le <span className="font-semibold text-blue-600">en data science</span>  visualisation et machine learning ,avec un intérêt marqué pour
-            <span className="font-semibold text-blue-600"> l’intelligence artificielle</span>et l’ingénierie des données afin de concevoir des analyses pertinentes et des outils décisionnels performants.
+            <span className="font-semibold text-blue-600"> l’intelligence artificielle</span> et l’ingénierie des données afin de concevoir des analyses pertinentes et des outils décisionnels performants.
           </p>
           
           <div className="flex justify-center space-x-6 mb-12 animate-slide-up">
