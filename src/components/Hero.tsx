@@ -92,13 +92,15 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-rotate-in">
-            <button
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            <a
+              href="https://drive.google.com/uc?export=download&id=1jK3EnY4MyZpj6baKpBE20kPRCI7XtUnN"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-2xl hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group"
             >
               <Download size={20} className="mr-2 group-hover:translate-y-1 transition-transform duration-300" />
               <span>Télécharger CV</span>
-            </button>
+            </a>
           </div>
         </div>
 
