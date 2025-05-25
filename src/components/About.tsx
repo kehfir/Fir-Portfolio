@@ -37,7 +37,7 @@ const About = () => {
       icon: Award
     },
     {
-      degree: "Licence Professionnelle",
+      degree: "DUT",
       institution: "DUT Informatique décisionnelle et science de données",
       location: "Ecole Supérieure de Technologie (Maroc)",
       year: "2021–2023",
